@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ── Favicons ─────────────────────────────────────────────────── -->
+    <!-- Standard ICO — broadest compatibility, loaded first -->
+    <!-- SVG fallback for modern browsers (scalable, always sharp) -->
+    <link rel="icon"             href="./favicon.svg"         type="image/svg+xml" />
+    <!-- PNG sizes for browsers that prefer explicit dimensions -->
+    <!-- Apple touch icon (iOS home screen, iMessage link previews) -->
+    <!-- Android / PWA manifest icon -->
+
+    <!-- ── Page metadata ────────────────────────────────────────────── -->
+    <title>Lab TAT Analytics · Demo</title>
+    <meta name="description" content="Demo of a lab turnaround-time analytics platform, running on synthetic data." />
+
+    <!-- ── Open Graph / URL preview ────────────────────────────────── -->
+    <meta property="og:title"       content="Lab TAT Analytics · Demo" />
+    <meta property="og:description" content="Operational intelligence dashboard for lab turnaround time." />
+    <meta property="og:type"        content="website" />
+
+    <!-- ── Typography ───────────────────────────────────────────────── -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      html, body, #root { min-height: 100vh; background: #060B12; }
+      body {
+        font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+        font-feature-settings: 'tnum' 1, 'ss01' 1;
+        font-variant-numeric: tabular-nums;
+      }
+      ::selection { background: rgba(56,189,248,0.25); color: #F1F5F9; }
+
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
